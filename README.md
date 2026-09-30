@@ -23,6 +23,7 @@
   <img src="https://img.shields.io/badge/%F0%9F%94%A5-no%20network%20permission-7ECBA1?style=flat-square" alt="No network permission">
   <img src="https://img.shields.io/badge/%F0%9F%9A%80-active%20development-FFD166?style=flat-square" alt="Status: active development">
   <img src="https://img.shields.io/badge/%F0%9F%93%B7-minSdk-26%20%2F%20targetSdk-35-757575?style=flat-square" alt="minSdk 26, targetSdk 35">
+  <img src="https://img.shields.io/badge/license-MIT-C4A8FF?style=flat-square" alt="MIT License">
 </p>
 
 ---
@@ -421,9 +422,19 @@ completely on-device is a core product promise, not an accident.
 <a id="license"></a>
 ## 📄 License
 
-**No license file has been added yet.** Before making this repository public, add one — for
-example `MIT` (permissive, common for apps) or `Apache-2.0` (explicit patent grant). Until a
-license is added, the code is technically all-rights-reserved and nobody can legally reuse it.
+Released under the **MIT License** — see [`LICENSE`](LICENSE) for the full text.
+
+```
+MIT License
+
+Copyright (c) 2026 The-Infernix
+```
+
+Viora is free to use, study, modify, and redistribute. The one requirement is that the
+copyright notice and permission notice travel with copies of the source.
+
+Want to contribute? See [Contributing](#contributing). Keeping Viora on-device — no network
+permissions, no analytics — is a product promise, so please keep it that way in any PR.
 
 ---
 
