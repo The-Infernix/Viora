@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="190" viewBox="0 0 900 190" role="img" aria-label="Viora data flow: UsageStats to foreground tracking to Room to use cases to Compose UI">
+  <title>Viora on-device data flow</title>
+  <defs>
+    <linearGradient id="page3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#1b1626"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="190" rx="18" fill="url(#page3)"/>
+  <rect width="900" height="190" rx="18" fill="none" stroke="#2A2A2A" stroke-width="1.5"/>
+
+  <g font-family="'JetBrains Mono','Fira Code',Menlo,Consolas,monospace">
+    <text x="28" y="38" font-size="14.5" fill="#E8E8E8">data flow</text>
+    <text x="872" y="38" font-size="12" fill="#7ECBA1" text-anchor="end">0 network calls · 0 trackers</text>
+
+    <!-- connectors -->
+    <g stroke="#2A2A2A" stroke-width="2" stroke-linecap="round">
+      <line x1="165" y1="100" x2="193" y2="100"/>
+      <line x1="345" y1="100" x2="373" y2="100"/>
+      <line x1="525" y1="100" x2="553" y2="100"/>
+      <line x1="705" y1="100" x2="733" y2="100"/>
+    </g>
+
+    <!-- travelling packets -->
+    <g fill="#C4A8FF">
+      <circle r="3.5" cx="165" cy="100" opacity="0">
+        <animate attributeName="cx" values="167;191" dur="1.5s" repeatCount="indefinite" begin="0s"/>
+        <animate attributeName="opacity" values="0;1;1;0" dur="1.5s" repeatCount="indefinite" begin="0s"/>
+      </circle>
+      <circle r="3.5" cx="345" cy="100" opacity="0">
+        <animate attributeName="cx" values="347;371" dur="1.5s" repeatCount="indefinite" begin="0.375s"/>
+        <animate attributeName="opacity" values="0;1;1;0" dur="1.5s" repeatCount="indefinite" begin="0.375s"/>
+      </circle>
+      <circle r="3.5" cx="525" cy="100" opacity="0">
+        <animate attributeName="cx" values="527;551" dur="1.5s" repeatCount="indefinite" begin="0.75s"/>
+        <animate attributeName="opacity" values="0;1;1;0" dur="1.5s" repeatCount="indefinite" begin="0.75s"/>
+      </circle>
+      <circle r="3.5" cx="705" cy="100" opacity="0">
+        <animate attributeName="cx" values="707;731" dur="1.5s" repeatCount="indefinite" begin="1.125s"/>
+        <animate attributeName="opacity" values="0;1;1;0" dur="1.5s" repeatCount="indefinite" begin="1.125s"/>
+      </circle>
+    </g>
+
+    <!-- nodes -->
+    <g text-anchor="middle" font-size="13">
+      <rect x="15" y="70" width="150" height="60" rx="14" fill="#1E1E1E" stroke="#C4A8FF" stroke-width="1.6"/>
+      <text x="90" y="97" fill="#C4A8FF">UsageStats</text>
+      <text x="90" y="114" font-size="10.5" fill="#6B6B6B">5s poll</text>
+
+      <rect x="195" y="70" width="150" height="60" rx="14" fill="#1E1E1E" stroke="#A0C4FF" stroke-width="1.6"/>
+      <text x="270" y="97" fill="#A0C4FF">FGS</text>
+      <text x="270" y="114" font-size="10.5" fill="#6B6B6B">VioraTracking</text>
+
+      <rect x="375" y="70" width="150" height="60" rx="14" fill="#1E1E1E" stroke="#FFB4A2" stroke-width="1.6"/>
+      <text x="450" y="97" fill="#FFB4A2">Room</text>
+      <text x="450" y="114" font-size="10.5" fill="#6B6B6B">viora.db · v2</text>
+
+      <rect x="555" y="70" width="150" height="60" rx="14" fill="#1E1E1E" stroke="#FFD166" stroke-width="1.6"/>
+      <text x="630" y="97" fill="#FFD166">UseCases</text>
+      <text x="630" y="114" font-size="10.5" fill="#6B6B6B">Hilt injected</text>
+
+      <rect x="735" y="70" width="150" height="60" rx="14" fill="#1E1E1E" stroke="#7ECBA1" stroke-width="1.6"/>
+      <text x="810" y="97" fill="#7ECBA1">Compose UI</text>
+      <text x="810" y="114" font-size="10.5" fill="#6B6B6B">Material 3</text>
+    </g>
+
+    <text x="28" y="165" font-size="11.5" fill="#9E9E9E">writes batch every 30s · 90-day retention · DataStore holds user settings · WorkManager rolls daily summaries at midnight</text>
+  </g>
+</svg>

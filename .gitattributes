@@ -1,0 +1,28 @@
+# Normalize text files to LF in the repository, check out as-is locally.
+* text=auto
+
+# The Gradle wrapper script must stay LF or it fails on Linux/macOS
+# with "bad interpreter: /bin/sh^M".
+gradlew text eol=lf
+gradlew.bat text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Build and CI scripts
+*.sh text eol=lf
+
+# Binary assets must never be line-ending normalized.
+*.webp binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.ttf binary
+*.otf binary
+*.jar binary
+*.apk binary
+*.aab binary
+*.keystore binary
+*.jks binary
+*.so binary

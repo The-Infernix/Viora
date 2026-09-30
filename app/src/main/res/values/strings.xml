@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Viora</string>
+    <string name="accessibility_service_description">Viora uses accessibility to gently manage your scrolling experience when you exceed your usage limits.</string>
+</resources>
